@@ -1,0 +1,80 @@
+/*conf.html*/
+*{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Inter', sans-serif;}
+body{
+  overflow-x: hidden;
+}
+
+#title {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  cursor:pointer
+}
+
+.c-img {
+    min-height: 150px;
+}
+
+
+.no-deco {
+    text-decoration: none;
+}
+
+.no-deco:hover {
+    text-decoration: underline;
+}
+
+#categorias-carousel {
+  position: relative;
+}
+
+.img-hover:hover {
+  transform: scale(1.025);
+  transition: transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+}
+
+.card-hover:hover {
+  transform: scale(1.025);
+  transition: transform 0.2s ease;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1)
+  }
+
+@media screen and (min-width:576px) {
+  .multi-carousel .carousel-inner {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .multi-carousel .carousel-item {
+    margin-right: 1%;
+  }
+
+  .multi-carousel.multi-carousel-5 .carousel-item {
+    display: block;
+    flex: 0 0 calc((100% - (0.75% * 4)) / 5); /* 4 gaps entre 5 itens */
+  }
+
+  .multi-carousel.multi-carousel-6 .carousel-item {
+    display: block;
+    flex: 0 0 calc((100% - (0.75% * 5)) / 6); /* 5 gaps entre 6 itens */
+  }
+}
+
+  .multi-carousel .carousel-inner {
+    padding: 1em;
+  }
+
+  .multi-carousel .carousel-item:last-child {
+    margin-right: 0 !important;
+  }
+
+  .delete-account {
+    text-decoration: none; 
+    color: rgb(248, 0, 0);
+  }
+
+  .delete-account:hover {
+    text-decoration: none; 
+    color: rgb(201, 0, 0);
+  }
