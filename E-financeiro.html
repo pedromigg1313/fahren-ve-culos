@@ -3,20 +3,150 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Financeiro</title>
-    <link rel="icon" type="png" href="imagens/logo-oficial.png">
+    <title>Setor Financeiro - AutoPrime</title>
+    <link rel="icon" type="image/png" href="imagens/logo-oficial.png">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body>
-      <section class="configuracao container-fluid px-md-5 py-4">
-        <a href="A-conf.html" class="btn btn-dark"><i class="bi bi-arrow-left"></i>&nbspVoltar</a>
-        <br>
-        <br>
-        <h2 style="font-weight: bolder;"><i class="bi bi-coin" style="font-size: 29px;"></i>&nbspFinanceiro</h2>
-        <br>
-      </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <!-- Cabeçalho / Voltar -->
+    <section class="container-fluid bg-light py-4 px-md-5">
+      <a href="A-conf.html" class="btn btn-dark mb-3">
+        <i class="bi bi-arrow-left"></i>&nbsp;Voltar
+      </a>
+      <h2 class="fw-bold">
+        <i class="bi bi-coin" style="font-size: 29px;"></i>&nbsp;Setor Financeiro
+      </h2>
+      <p class="text-muted">Informações sobre financiamento, planos e contato do setor financeiro da AutoPrime.</p>
+    </section>
+
+    <!-- Planos de Financiamento -->
+    <section class="container py-5">
+      <h3 class="mb-4">Nossos Planos de Financiamento</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-success">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-cash-stack text-success"></i> Plano Básico</h5>
+              <p class="card-text">Entrada a partir de 20%, com até 36x fixas.</p>
+              <ul>
+                <li>Taxa de juros: 1.29% a.m.</li>
+                <li>Aprovação em até 24h</li>
+                <li>Ideal para veículos até R$ 70.000</li>
+              </ul>
+              <a href="#" class="btn btn-outline-success">Simular</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-primary">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-car-front-fill text-primary"></i> Plano Premium</h5>
+              <p class="card-text">Entrada flexível, até 48x com taxas reduzidas.</p>
+              <ul>
+                <li>Taxa de juros: 0.99% a.m.</li>
+                <li>Aceita troca com troco</li>
+                <li>Para carros de luxo e seminovos</li>
+              </ul>
+              <a href="#" class="btn btn-outline-primary">Simular</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-warning">
+            <div class="card-body">
+              <h5 class="card-title"><i class="bi bi-calendar3 text-warning"></i> Leasing Empresarial</h5>
+              <p class="card-text">Ideal para empresas e frotas. Prazos estendidos.</p>
+              <ul>
+                <li>Taxa de juros: a partir de 0.89% a.m.</li>
+                <li>Prazo de até 60 meses</li>
+                <li>Consultoria financeira inclusa</li>
+              </ul>
+              <a href="#" class="btn btn-outline-warning">Simular</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tabela de Taxas -->
+    <section class="container my-5">
+      <h3 class="mb-4">Tabela de Taxas e Condições</h3>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+          <thead class="table-dark">
+            <tr>
+              <th>Plano</th>
+              <th>Entrada Mínima</th>
+              <th>Parcelamento</th>
+              <th>Taxa de Juros</th>
+              <th>Prazo</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Básico</td>
+              <td>20%</td>
+              <td>Até 36x</td>
+              <td>1.29% a.m.</td>
+              <td>3 anos</td>
+            </tr>
+            <tr>
+              <td>Premium</td>
+              <td>10% a 30%</td>
+              <td>Até 48x</td>
+              <td>0.99% a.m.</td>
+              <td>4 anos</td>
+            </tr>
+            <tr>
+              <td>Leasing Empresarial</td>
+              <td>Entrada sob análise</td>
+              <td>Até 60x</td>
+              <td>0.89% a.m.</td>
+              <td>5 anos</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Contato do Setor Financeiro -->
+    <section class="container my-5">
+      <h3 class="mb-4">Fale com o Setor Financeiro</h3>
+      <div class="row">
+        <div class="col-md-6">
+          <p><i class="bi bi-telephone-fill"></i> Telefone: (11) 4002-8922</p>
+          <p><i class="bi bi-whatsapp"></i> WhatsApp: (11) 98888-7777</p>
+          <p><i class="bi bi-envelope-fill"></i> E-mail: financeiro@autoprime.com.br</p>
+          <p><i class="bi bi-clock"></i> Atendimento: Seg a Sex, 9h às 18h</p>
+        </div>
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Seu Nome</label>
+              <input type="text" class="form-control" id="nome" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Seu E-mail</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-success">Enviar Mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white text-center py-3">
+      <p class="mb-0">&copy; 2025 AutoPrime - Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
