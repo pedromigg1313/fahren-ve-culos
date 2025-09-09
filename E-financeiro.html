@@ -10,68 +10,62 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
   </head>
   <body>
-
-    <!-- Cabeçalho / Voltar -->
-    <section class="container-fluid bg-light py-4 px-md-5">
-      <a href="A-conf.html" class="btn btn-dark mb-3">
-        <i class="bi bi-arrow-left"></i>&nbsp;Voltar
-      </a>
-      <h2 class="fw-bold">
-        <i class="bi bi-coin" style="font-size: 29px;"></i>&nbsp;Setor Financeiro
-      </h2>
-      <p class="text-muted">Informações sobre financiamento, planos e contato do setor financeiro da AutoPrime.</p>
+    <section class="container-fluid bg-light rounded-bottom-4 px-md-5 pt-4 text-white" style="background: linear-gradient(to left, rgba(33, 33, 33, 0.826), #141414);">
+          <h2 style="font-weight: bolder;" class="pb-3 mb-3"><i class="bi bi-coin" style="font-size: 29px;"></i>&nbsp;Setor Financeiro</h2>
     </section>
-
-    <!-- Planos de Financiamento -->
-    <section class="container py-5">
-      <h3 class="mb-4">Nossos Planos de Financiamento</h3>
+    <a href="A-conf.html" class="ms-4 voltar" style="font-size: 18px;">
+        <i class="bi bi-arrow-left"></i>&nbsp;Voltar
+    </a>
+    <section class="container mt-1 py-2">
+      <h3 class="mb-4">Nosso Financeiro está ao seu dispor, fahren user!</h3>
       <div class="row g-4">
         <div class="col-md-4">
-          <div class="card border-success">
+          <div class="card border-black">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-cash-stack text-success"></i> Plano Básico</h5>
-              <p class="card-text">Entrada a partir de 20%, com até 36x fixas.</p>
-              <ul>
-                <li>Taxa de juros: 1.29% a.m.</li>
-                <li>Aprovação em até 24h</li>
-                <li>Ideal para veículos até R$ 70.000</li>
-              </ul>
-              <a href="#" class="btn btn-outline-success">Simular</a>
+              <h5 class="card-title"><i class="bi bi-cash-stack"></i> Métodos de Pagamentos</h5>
+              <p class="card-text">Cartão de crédito, débito, PIX e boleto bancário.</p>
+                <input class="form-check-input" type="radio" value="" id="ambos">
+                    <label class="form-check-label" for="ambos">
+                      A
+                    </label>
+                    <input class="form-check-input" type="radio" value="" id="ambos">
+                    <label class="form-check-label" for="ambos">
+                      Ambos(Padrão)
+                    </label>
+              <a href="#" class="btn btn-outline-dark">Simular</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-primary">
+          <div class="card border-black">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-car-front-fill text-primary"></i> Plano Premium</h5>
+              <h5 class="card-title"><i class="bi bi-car-front-fill"></i> Plano Premium</h5>
               <p class="card-text">Entrada flexível, até 48x com taxas reduzidas.</p>
               <ul>
                 <li>Taxa de juros: 0.99% a.m.</li>
                 <li>Aceita troca com troco</li>
                 <li>Para carros de luxo e seminovos</li>
               </ul>
-              <a href="#" class="btn btn-outline-primary">Simular</a>
+              <a href="#" class="btn btn-outline-dark">Simular</a>
             </div>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="card border-warning">
+          <div class="card border-black">
             <div class="card-body">
-              <h5 class="card-title"><i class="bi bi-calendar3 text-warning"></i> Leasing Empresarial</h5>
+              <h5 class="card-title"><i class="bi bi-calendar3 text-dark"></i> Leasing Empresarial</h5>
               <p class="card-text">Ideal para empresas e frotas. Prazos estendidos.</p>
               <ul>
                 <li>Taxa de juros: a partir de 0.89% a.m.</li>
                 <li>Prazo de até 60 meses</li>
                 <li>Consultoria financeira inclusa</li>
               </ul>
-              <a href="#" class="btn btn-outline-warning">Simular</a>
+              <a href="#" class="btn btn-outline-dark">Simular</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Tabela de Taxas -->
     <section class="container my-5">
       <h3 class="mb-4">Tabela de Taxas e Condições</h3>
       <div class="table-responsive">
@@ -111,8 +105,6 @@
         </table>
       </div>
     </section>
-
-    <!-- Contato do Setor Financeiro -->
     <section class="container my-5">
       <h3 class="mb-4">Fale com o Setor Financeiro</h3>
       <div class="row">
@@ -141,12 +133,9 @@
         </div>
       </div>
     </section>
-
-    <!-- Rodapé -->
     <footer class="bg-dark text-white text-center py-3">
       <p class="mb-0">&copy; 2025 AutoPrime - Todos os direitos reservados.</p>
     </footer>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

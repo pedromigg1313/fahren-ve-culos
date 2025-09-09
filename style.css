@@ -93,10 +93,10 @@ body{
   }
 
   .voltar {
-    color: white;
+    color: rgb(57, 57, 255);
   }
 
   .voltar:hover {
-    color: rgb(225, 225, 225);
+    color: rgb(0, 0, 225);
     text-decoration: none;
   }
