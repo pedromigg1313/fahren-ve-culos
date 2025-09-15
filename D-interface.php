@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Interface</title>
+    <link rel="icon" type="png" href="img/logo-oficial.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  </head>
+  <body>
+       <!-- CABEÇALHO -->
+    <section class="container-fluid rounded-bottom-4 mb-3 px-md-5 pt-4 text-black" style="background-color: rgba(0, 0, 0, 0.1);">
+        <h1 style="font-weight: bolder;" class="pb-2"><i class="bi bi-grid-3x3" style="font-size: 35px;"></i>&nbsp;Interface</h1>
+    </section>
+    <!-- CABEÇALHO -->
+        
+    <!-- VOLTAR -->
+    <a href="A-conf.php" class="ms-4 voltar" style="font-size: 18px;">
+        <i class="bi bi-arrow-left"></i>&nbsp;Voltar
+    </a>
+    <!-- VOLTAR -->
+     
+      <div class="container mt-3">
+          <div class="row">
+              <div class="col-3">
+                  <section class="px-2 py-1 mb-4 border border-dark rounded" style="background-color: rgba(0, 0, 0, 0.027);">
+                    <h5 class="mt-2"><i class="bi bi-palette-fill"></i>&nbspTema da Interface</h5>    
+                    <h6>Escolha o Tema da sua Interface:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="claro">
+                        <label class="form-check-label" for="claro">
+                          Claro(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="escuro">
+                        <label class="form-check-label" for="escuro">
+                          Escuro
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="sepia">
+                        <label class="form-check-label" for="sepia">
+                          Sépia
+                        </label>
+                      </div>
+                      <h6>Contraste:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="contraste padrao">
+                        <label class="form-check-label" for="contraste padrao">
+                          Contraste Padrão
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="" id="contraste reduzido">
+                        <label class="form-check-label" for="contraste reduzido">
+                          Contraste Reduzido
+                        </label>
+                      </div>
+                  </section>
+                  <section class="px-2 py-1 mb-4 border border-dark rounded" style="background-color: rgba(0, 0, 0, 0.027);">
+                    <h5 class="mt-2 "><i class="bi bi-file-font-fill"></i>&nbspAjuste da Fonte</h5> 
+                    <h6>Tamanho da Fonte:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="pequena">
+                          <label class="form-check-label" for="pequena">
+                            Pequena
+                          </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="media">
+                          <label class="form-check-label" for="media">
+                            Média(Padrão)
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="" id="grande">
+                          <label class="form-check-label" for="grande">
+                            Grande
+                          </label>
+                      </div>
+                  </section>
+              </div>
+              <div class="col-3">
+                  <section class="px-2 py-1 mb-4 border border-dark rounded" style="background-color: rgba(0, 0, 0, 0.027);">
+                    <h5 class="mt-2"><i class="bi bi-layout-text-sidebar-reverse"></i>&nbspLayout da Página</h5>    
+                    <h6>Recomendações de Produtos na <b>Página Principal</b>:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="compacto">
+                        <label class="form-check-label" for="compacto">
+                          Não
+                        </label>
+                      </div>
+                      <h6>Visualização de Amigos On-lines</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não
+                        </label>
+                      </div>
+                      <h6>Apresentações sobre novos produtos</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não
+                        </label>
+                      </div>
+                  </section>
+              </div>
+              <div class="col-3">
+                  <section class="px-2 py-1 mb-4 border border-dark rounded" style="background-color: rgba(0, 0, 0, 0.027);">
+                    <h5 class="mt-2"><i class="bi bi-layout-text-sidebar-reverse"></i>&nbspLayout da Página</h5>    
+                    <h6>Aparecer mensagem de produtos removidos por suas preferências nos <b>Resultados de Busca</b>:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="compacto">
+                        <label class="form-check-label" for="compacto">
+                          Não
+                        </label>
+                      </div>
+                      <h6>Desaparecer Recomendações</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim
+                        </label>
+                      </div>
+                      <h6>Mostrar uma aba especializada para Produtos na Lista de Desejos</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não
+                        </label>
+                      </div>
+                  </section>
+              </div>
+              <div class="col-3">
+                  <section class="px-2 py-1 mb-4 border border-dark rounded" style="background-color: rgba(0, 0, 0, 0.027);">
+                    <h5 class="mt-2"><i class="bi bi-layout-text-sidebar-reverse"></i>&nbspLayout da Página</h5>    
+                    <h6>Aparecer todas Informações do Perfil de alguem na página <b>Perfil de Terceiros</b>:</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="compacto">
+                        <label class="form-check-label" for="compacto">
+                          Não
+                        </label>
+                      </div>
+                      <h6>Visualização de Produtos sendo vendidos</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim
+                        </label>
+                      </div>
+                      <h6>Visualização de Anúncios Inéditos</h6>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Sim(Padrão)
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" value="" id="padrão">
+                        <label class="form-check-label" for="padrão">
+                          Não
+                        </label>
+                      </div>
+                  </section>
+              </div>
+          </div>
+          <button class="btn btn-dark d-flex align-items-center gap-1 my-1" onclick="alert('Salvo com Sucesso')" type="submit">
+            <i class="bi bi-floppy"></i>
+            <span>Salvar Alterações</span>
+          </button>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

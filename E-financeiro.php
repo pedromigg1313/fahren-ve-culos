@@ -11,8 +11,8 @@
 </head>
 <body>
     <!-- CABEÇALHO -->
-    <section class="container-fluid bg-light rounded-bottom-4 px-md-5 pt-4 text-white" style="background: linear-gradient(to left, rgba(33, 33, 33, 0.826), #141414);">
-          <h2 style="font-weight: bolder;" class="pb-3 mb-3"><i class="bi bi-coin" style="font-size: 29px;"></i>&nbsp;Setor Financeiro</h2>
+    <section class="container-fluid rounded-bottom-4 mb-3 px-md-5 pt-4 text-black" style="background-color: rgba(0, 0, 0, 0.1);">
+        <h1 style="font-weight: bolder;" class="pb-2"><i class="bi bi-coin" style="font-size: 37px;"></i>&nbsp;Setor Financeiro</h1>
     </section>
     <!-- CABEÇALHO -->
 
@@ -113,7 +113,7 @@
                         <td class="bg-success bg-opacity-75" style="font-size: 18px">Opcional</td>
                         <td class="bg-danger" style="font-size: 18px">Obrigatório</td>
                         <td class="bg-danger" style="font-size: 18px">Obrigatório</td>
-                        <td class="bg-success bg-opacity-75" style="font-size: 18px">Obrigatório</td>
+                        <td class="bg-danger" bg-opacity-75" style="font-size: 18px">Obrigatório</td>
                         <td class="bg-success bg-opacity-75" style="font-size: 18px">Opcional</td>
                         <td class="bg-success bg-opacity-75" style="font-size: 18px">Opcional</td>
                     </tr>
