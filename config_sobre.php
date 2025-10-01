@@ -10,8 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="main-container">
-
+    <div class="main-container rounded rounded-bottom-5">
         <section class="container text-light main-section">
             <h1 class="display-1 text-center fw-bolder">O Que é Fahren Veículos?</h1>
             <article>
@@ -20,19 +19,28 @@
                     <b>Valorizamos cada cliente como único e trabalhamos para superar expectativas</b>. Na Fahren, você não está apenas comprando um veículo - está adquirindo uma experiência diferenciada que prioriza sua satisfação e confiança em <b>primeiro lugar</b>.
                 </p>
             </article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-5">
+                        <h3 class="mt-3" id="proxima-secao">Nosso Propósito</h3>
+                        <p class="ms-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum vero quos mollitia illum laudantium at dolorum ad,
+                            consequuntur autem exercitationem provident explicabo aperiam temporibus facere magni in nihil tempora.
+                        </p>
+                    </div>
+                    <div class="vr mx-auto rounded rounded-5"></div>
+                    <div class="col-5">
+                        <h3 class="mt-3" id="proxima-secao">Seja nosso cliente!</h3>
+                        <p class="ms-4">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde rerum vero quos mollitia illum laudantium at dolorum ad,
+                            consequuntur autem exercitationem provident explicabo aperiam temporibus facere magni in nihil tempora.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div class="row justify-content-center g-4 image-section">
-            <div class="col-auto">
-                <img src="https://cdn.borainvestir.b3.com.br/2024/12/18150205/quanto-e-onde-investir-para-comprar-um-carro-zero-em-2025.webp" alt="Descrição da imagem 1" id="img_um" class="rounded object-fit-cover image-style">
-            </div>
-            <div class="col-auto">
-                <img src="https://classic.exame.com/wp-content/uploads/2022/06/capa-3.jpg" alt="Descrição da imagem 2" id="img_dois" class="rounded object-fit-cover image-style">
-            </div>
-            <div class="col-auto">
-                <img src="https://einvestidor.estadao.com.br/wp-content/uploads/2021/06/aluguelautomoveis2_140620215704.jpg" alt="Descrição da imagem 3" id="img_tres" class="rounded object-fit-cover image-style">
-            </div>
-        </div>
-        <a href="#proxima-secao" class="text-light text-decoration-none d-block saber-mais">Quer saber mais? Arraste para baixo!&nbsp;&nbsp;<i class="bi bi-arrow-down-circle-fill fs-2"></i></a>
+        <a href="#proxima-secao" class="text-light text-decoration-none d-block saber-mais">Quer saber mais? Arraste para baixo!&nbsp;&nbsp;<i class="bi bi-arrow-down-circle-fill fs-4"></i></a>
+        <br>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
