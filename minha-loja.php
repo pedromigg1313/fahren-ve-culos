@@ -58,7 +58,8 @@ if (!isset($_SESSION['nome'])) {
 
         /* Garantir que os botões fiquem iguais ao do config */
         .botoes-acoes .btn {
-            height: 38px; /* ajuste para igualar */
+            height: 38px;
+            /* ajuste para igualar */
             padding: 0 1rem;
             font-size: 0.875rem;
         }
@@ -79,7 +80,7 @@ if (!isset($_SESSION['nome'])) {
     ?>
 
     <main>
-        <!-- Título + Botões -->
+
         <div class="titulo-e-botao">
             <h2 class="fw-semibold mb-2 mb-md-0 mt-3">Minha Loja</h2>
             <div class="botoes-acoes">
@@ -128,17 +129,27 @@ if (!isset($_SESSION['nome'])) {
             </div>
             <div class="row g-2 align-items-center">
                 <div class="col">
-                    <input type="text" id="sobre-input" readonly
-                        class="form-control shadow-sm"
+                    <input type="text" id="sobre-input" readonly class="form-control shadow-sm"
                         placeholder="Escreva algo sobre você..." maxlength="250">
                 </div>
             </div>
         </div>
         <hr class="my-4">
 
-        <!-- Mini Carrossel -->
+        <div class="mb- d-flex flex-wrap gap-2">
+            <input type="radio" class="btn-check" name="telas" id="tela-1" autocomplete="off" checked>
+            <label class="btn btn-outline-dark w-auto rounded-pill px-3 shadow-sm" for="tela-1">Lojas</label>
+            <input type="radio" class="btn-check" name="telas" id="tela-2" autocomplete="off">
+            <label class="btn btn-outline-dark w-auto rounded-pill px-3 shadow-sm" for="tela-2">Endereço</label>
+            <input type="radio" class="btn-check" name="telas" id="tela-3" autocomplete="off">
+            <label class="btn btn-outline-dark w-auto rounded-pill px-3 shadow-sm" for="tela-3">Funcionamento</label>
+            <input type="radio" class="btn-check" name="telas" id="tela-4" autocomplete="off">
+            <label class="btn btn-outline-dark w-auto rounded-pill px-3 shadow-sm" for="tela-4">Formas de
+                pagamento</label>
+        </div>
+
         <div class="mt-3">
-            <h5 class="fw-semibold mb-3">Seus últimos anúncios</h5>
+            <h5 class="fw-semibold mb-3">Anúncios recentes das lojas que @<?= $_SESSION['nome'] ?> participa</h5>
             <div id="miniCarousel" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -160,6 +171,44 @@ if (!isset($_SESSION['nome'])) {
             </div>
         </div>
         <hr class="my-4">
+    </main>
+
+    <?php include '../estruturas/alert/alert.php' ?>
+    <main class="container-fluid d-flex vh-100 p-0 mt-4">
+        <?php $selected = 'loja';
+        include_once '../estruturas/sidebar/sidebar.php' ?>
+        <div class="col d-flex" style="margin-left: calc(200px + 5vw);">
+            <div class="container p-5 d-flex justify-content-center align-items-center flex-grow-1">
+                <div class="card p-3 w-100">
+                    <div class="card-body">
+                        <div class="mb-5">
+                            <label for="exampleFormControlInput1" class="form-label">Suas lojas</label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1"
+                                placeholder="Procure as lojas que você está participando">
+                        </div>
+                        <ul class="list-group list-group-flush flex-grow-1 overflow-y-auto">
+                            <?php
+                            $quantidade = 10;
+                            for ($i = 1; $i <= $quantidade; $i++): ?>
+                                <li class="list-group-item d-flex align-items-center gap-3">
+                                    <div class="col-auto flex-shrink-0">
+                                        <div class="ratio ratio-1x1" style="width: calc(30px + .5vw);">
+                                            <img src="../img/logo-fahren-bg.jpg" class="img-fluid rounded-circle"
+                                                alt="Avatar">
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="flex-grow-1 overflow-hidden d-flex justify-content-between align-items-center">
+                                        <h6 class="mb-1 me-2 text-truncate">Loja</h6>
+                                        <span><i class="bi bi-chevron-right"></i></span>
+                                    </div>
+                                </li>
+                            <?php endfor; ?>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
@@ -218,4 +267,5 @@ if (!isset($_SESSION['nome'])) {
         });
     </script>
 </body>
+
 </html>
