@@ -1,125 +1,161 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* CONFIGURACAO REDEFINIDA */
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Inter", sans-serif;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
+/* CONFIGURACAO REDEFINIDA */
 
-/* comeco FUNCAO GLOBAL */
+/* comeco FUNCÃO GLOBAL */
 :root {
-  /* .css-titulo-principal */
-  --titulo-principal-tamanho: clamp(15px, 2.9vw, 32px);
-  --titulo-principal-estilo: 550;
-  --titulo-principal-espaco-externo-top: 2.0rem;
-  --titulo-principal-espaco-externo-bottom: 2.0rem;
+    /* .css-titulo-principal */
+    --titulo-principal-tamanho: 2.9rem;
+    --titulo-principal-cor: #000000;
+    --titulo-principal-espaco-externo-left: 5rem;
+    --titulo-principal-espaco-externo-right: 5rem;
+    --titulo-principal-espaco-externo-bottom: 0.1rem;
+    --titulo-principal-espaco-interno-top: 1.0rem;
 
-  /* .css-container-pai */
-  --container-pai-cor-fundo: #f3f3f3;
+    /* .css-subtitulo */
+    --subtitulo-espaco-externo-left: 5rem;
+    --subtitulo-espaco-externo-right: 5rem;
 
-  /* .css-card-um */
-  --card-um-cor-fundo: #ededed;
-  --card-um-borda: none;
+    /* .css-container */
+    --container-pai-cor-fundo: #f3f3f3;
+    --container-pai-espaco-externo-left: 5rem;
+    --container-pai-espaco-externo-right: 5rem;
+    --container-pai-espaco-externo-bottom: 2rem;
+    --container-pai-espaco-interno-todo: 0.2rem;
+    --container-pai-sombra-bottom: 0 1px 4px #0000002c;
 
-  /* .css-titulo-detalhe */
-  --titulo-detalhe-tamanho: clamp(15px, 2.9vw, 32px);
+    /* .css-pratica-seguranca */
+    --pratica-seguranca-espaco-left: 5rem;
+    --pratica-seguranca-espaco-right: 5rem;
 
-  /* .css-paragrafo-detalhe */ 
-  --paragrafo-detalhe-tamanho: clamp(12px, 1.3vw, 32px);
-  --paragrafo-detalhe-espaco-externo-left: 0.9rem;
+    /* .css-card-principal-um */
+    --card-principal-um-espaco-externo-left: 2rem;
+    --card-principal-um-cor-fundo: #f3f3f3;
+
+    /* .css-card-principal-dois */
+    --card-principal-dois-cor-fundo: #dadada;
+
+    /* .css-janela-imagem-compra */
+    --janela-imagem-compra-cor: #353d43;
+    --janela-imagem-compra-espaco-interno-top: 1rem;
+
+    /* .css-secao-dois */
+    --secao-dois-cor: #353d43;
+
+    /* .css-card-tres */
+    --card-tres-cor: #f3f3f3;
 }
-/* fim FUNCAO GLOBAL */
+/* fim FUNCÃO GLOBAL */
+
+.css-secao-um {
+    background-image: url("../imagem/imagem-fundo.png");
+    background-size: cover;        /* cobre toda a tela */
+    background-position: center;   /* centraliza */
+    background-repeat: no-repeat;  /* evita repeticão */
+    background-attachment: fixed;  /* fundo fixo ao rolar a página */
+}
 
 .css-titulo-principal {
-  font-size: var(--titulo-principal-tamanho);
-  font-weight: var(--titulo-principal-estilo);
-  margin-top: var(--titulo-principal-espaco-externo-top);
-  margin-bottom: var(--titulo-principal-espaco-externo-bottom);
+    font-size: var(--titulo-principal-tamanho);
+    margin-left: var(--titulo-principal-espaco-externo-left);
+    margin-right: var(--container-pai-espaco-externo-right);
+    margin-bottom: var(--titulo-principal-espaco-externo-bottom);
+    padding-top: var(--titulo-principal-espaco-interno-top);
 }
 
-.css-container-pai {
-  background-color: var(--container-pai-cor-fundo);
+.css-subtitulo {
+    margin-left: var(--subtitulo-espaco-externo-left);
+    margin-right: var(--subtitulo-espaco-externo-right);
 }
 
-.css-card-um {
-  background-color: var(--card-um-cor-fundo);
-  border: var(--card-um-borda);
-  transition: all 0.2s ease;
+.css-container {
+    background-color: var(--container-pai-cor-fundo);
+    margin-left: var(--container-pai-espaco-externo-left);
+    margin-right: var(--container-pai-espaco-externo-right);
+    margin-bottom: var(--container-pai-espaco-externo-bottom);
+    padding: var(--container-pai-espaco-interno-todo);
+    box-shadow: var(--container-pai-sombra-bottom);
 }
 
-.css-card-um:hover {
-  background-color: #e8e8e8;
-  transform: scale(1.05);
+.css-pratica-seguranca {
+    margin-left: var(--pratica-seguranca-espaco-left);
+    margin-right: var(--pratica-seguranca-espaco-right);
+    color: var(--pratica-seguranca-cor);
 }
 
-.css-card-um-titulo {
-  font-size: clamp(10px, 1.5vw, 30px);
+.css-card-principal-um {
+    background-color: var(--card-principal-um-cor-fundo);
+    margin-left: var(--card-principal-um-espaco-externo-left);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
-.css-titulo-detalhe {
-  font-size: var(--titulo-detalhe-tamanho);
+.css-card-principal-dois {
+    border: none;
+    background-color: var(--card-principal-dois-cor-fundo);
 }
 
-.css-paragrafo-detalhe {
-  font-size: var(--paragrafo-detalhe-tamanho);
-  padding-left: var(--paragrafo-detalhe-espaco-externo-left);
+#carouselExampleIndicators {
+  height: 300px;
+  overflow: hidden;
 }
 
-.css-imagem-animacao-pix {
-  animation: flutuar-pix 3s infinite ease-in-out;
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item,
+#carouselExampleIndicators .carousel-item img {
+  height: 100%; 
+  object-fit: cover;
 }
 
-.css-imagem-animacao-cartao-credito {
-  animation: pulsar-cartao-credito 7s infinite ease-in-out;
+.carousel-control-prev, .carousel-control-next {
+    margin-top: 125px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 40px;
 }
 
-.css-imagem-animacao-dinheiro {
-  animation: flutuar-dinheiro 4s infinite ease-in-out;
+.css-janela-imagem-compra {
+    background-color: var(--janela-imagem-compra-cor);
+    padding-top: var(--janela-imagem-compra-espaco-interno-top);
 }
 
-.css-imagem-animacao-boleto-bancario {
-  animation: flutuar-boleto-bancario 2s infinite ease-in-out;
+.css-secao-dois {
+    background-color: var(--secao-dois-cor);
 }
 
-.css-imagem-animacao-carteira-digital {
-  animation: pulsar-carteira-digital 4s infinite ease-in-out;
+.css-card-tres {
+    background-color: var(--card-tres-cor);
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
-.css-imagem-animacao-cartao-debito {
-  animation: pulsar-cartao-debito 3s infinite ease-in-out;
+.css-card-tres:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--card-tres-cor-hover, #dddddd); /* Opcional: defina uma cor hover */
 }
 
-@keyframes flutuar-pix {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+
+.css-icon {
+    width: 6.4rem;
+    height: 8rem;
+    transition: all 0.3s ease;
 }
 
-@keyframes pulsar-cartao-credito {
-  0%, 100% { transform:  scale(1); }
-  50% { transform: scale(1.1); }
-}
 
-@keyframes flutuar-dinheiro {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-9px); }
-  100% { transform: translateY(0); }
-}
-
-@keyframes flutuar-boleto-bancario {
-  0% { transform: translateY(0); }
-  50% { transform: translateY(-9px); }
-  100% { transform: translateY(0); }
-}
-
-@keyframes pulsar-carteira-digital {
-  0%, 90% { transform:  scale(1); }
-  50% { transform: scale(1.1); }
-}
-
-@keyframes pulsar-cartao-debito {
-  0%, 65% { transform:  scale(1); }
-  60% { transform: scale(1.1); }
+.css-card-tres:hover .css-icon{
+    transform: scale(1.1);
 }
