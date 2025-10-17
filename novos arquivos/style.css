@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=BBH+Sans+Bogle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* comeco FUNCAO GLOBAL */
+:root {
+  /* .css-titulo-principal */
+  --titulo-principal-tamanho: clamp(15px, 2.9vw, 32px);
+  --titulo-principal-estilo: 550;
+  --titulo-principal-espaco-externo-top: 2.0rem;
+  --titulo-principal-espaco-externo-bottom: 2.0rem;
+
+  /* .css-container-pai */
+  --container-pai-cor-fundo: #f3f3f3;
+
+  /* .css-card-um */
+  --card-um-cor-fundo: #ededed;
+  --card-um-borda: none;
+
+  /* .css-titulo-detalhe */
+  --titulo-detalhe-tamanho: clamp(15px, 2.9vw, 32px);
+
+  /* .css-paragrafo-detalhe */ 
+  --paragrafo-detalhe-tamanho: clamp(12px, 1.3vw, 32px);
+  --paragrafo-detalhe-espaco-externo-left: 0.9rem;
+}
+/* fim FUNCAO GLOBAL */
+
+.css-titulo-principal {
+  font-size: var(--titulo-principal-tamanho);
+  font-weight: var(--titulo-principal-estilo);
+  margin-top: var(--titulo-principal-espaco-externo-top);
+  margin-bottom: var(--titulo-principal-espaco-externo-bottom);
+}
+
+.css-container-pai {
+  background-color: var(--container-pai-cor-fundo);
+}
+
+.css-card-um {
+  background-color: var(--card-um-cor-fundo);
+  border: var(--card-um-borda);
+  transition: all 0.2s ease;
+}
+
+.css-card-um:hover {
+  background-color: #e8e8e8;
+  transform: scale(1.05);
+}
+
+.css-card-um-titulo {
+  font-size: clamp(10px, 1.5vw, 30px);
+}
+
+.css-titulo-detalhe {
+  font-size: var(--titulo-detalhe-tamanho);
+}
+
+.css-paragrafo-detalhe {
+  font-size: var(--paragrafo-detalhe-tamanho);
+  padding-left: var(--paragrafo-detalhe-espaco-externo-left);
+}
+
+.css-imagem-animacao-pix {
+  animation: flutuar-pix 3s infinite ease-in-out;
+}
+
+.css-imagem-animacao-cartao-credito {
+  animation: pulsar-cartao-credito 7s infinite ease-in-out;
+}
+
+.css-imagem-animacao-dinheiro {
+  animation: flutuar-dinheiro 4s infinite ease-in-out;
+}
+
+.css-imagem-animacao-boleto-bancario {
+  animation: flutuar-boleto-bancario 2s infinite ease-in-out;
+}
+
+.css-imagem-animacao-carteira-digital {
+  animation: pulsar-carteira-digital 4s infinite ease-in-out;
+}
+
+.css-imagem-animacao-cartao-debito {
+  animation: pulsar-cartao-debito 3s infinite ease-in-out;
+}
+
+@keyframes flutuar-pix {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes pulsar-cartao-credito {
+  0%, 100% { transform:  scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes flutuar-dinheiro {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes flutuar-boleto-bancario {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-9px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes pulsar-carteira-digital {
+  0%, 90% { transform:  scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@keyframes pulsar-cartao-debito {
+  0%, 65% { transform:  scale(1); }
+  60% { transform: scale(1.1); }
+}
