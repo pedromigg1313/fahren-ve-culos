@@ -1,3 +1,4 @@
+/* CONSERTADO O BUG de Palavras Misturadas em pequenas resoluções */
 <?php
 session_start();
 
